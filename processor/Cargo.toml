@@ -1,0 +1,16 @@
+[package]
+name = "archiweb_processor"
+version = "0.1.0"
+authors = ["Hannes Karppila <hannes.karppila@gmail.com>"]
+edition = "2018"
+publish = false
+
+
+[dependencies]
+rocket = "0.4.2"
+serde = { version = "1.0", features = ["derive"] }
+
+[dependencies.rocket_contrib]
+version = "0.4.2"
+default-features = false
+features = ["json"]

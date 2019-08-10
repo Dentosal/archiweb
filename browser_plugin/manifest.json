@@ -1,0 +1,40 @@
+{
+
+  "manifest_version": 2,
+  "name": "Arhiweb",
+  "version": "1.0",
+
+  "description": "Collects URLs of web pages for archiving",
+
+  "permissions": [
+    "<all_urls>",
+    "storage",
+    "webRequest",
+    "activeTab",
+    "tabs"
+  ],
+
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+
+
+  "options_ui": {
+    "browser_style": true,
+    "page": "options/main.html"
+  },
+
+  "browser_action": {
+    "browser_style": true,
+    "default_popup": "popup/main.html",
+    "default_icon": "icons/icon-96.png",
+    "default_title": "Archiweb"
+  },
+
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}
