@@ -9,6 +9,7 @@
 * Search - Web service that can be used to retrieve some data
 * Main database - Original data, compressed
 
+![Flowchart](docs/images/dataflow.dot.svg)
 
 ## Implementation roadmap
 

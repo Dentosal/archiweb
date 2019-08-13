@@ -1,0 +1,13 @@
+digraph Dataflow {
+    User[shape=square]
+    "Main DB"[shape=cylinder]
+    "Index DB"[shape=cylinder]
+
+    User -> Browser [label="uses"]
+    Browser -> Processor [label="URLs"]
+    Processor -> "Main DB" [label="Compressed data"]
+    Processor -> "Index DB" [label="Metadata"]
+    "Index DB" -> Search
+    "Main DB" -> Search
+    Search -> User [label="Search results"]
+}
